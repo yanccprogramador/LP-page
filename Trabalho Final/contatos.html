@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<html lang="pt-br">
+  <head><meta charset="UTF-8">
+    <title> contatos</title>
+       <style> 
+	    body{font-size: 20px;
+	   background-color:#000000;
+	   font-family: vernada;
+	   font-style: italic;
+	   color: #FFFFFF}
+			 ul#menu > li {
+				float:left;
+			}
+  
+			ul#menu > li > ul{
+				left:0px;
+				top:25px;
+			}
+		   ul{ list-style:none;
+		       padding:2;
+			   margin:2;
+			   color: #FFFFFF;
+			 }
+            li{text-decoration:underline;
+                width: 125px;
+                padding: 4px;
+				position: relative;
+               }
+            li:hover{ background-color: red;
+                      color:white;
+					}
+            /*submenu*/
+			li>ul{ position:absolute;
+				   left:130px;
+				   top:3 px;
+				   color:blue;
+				 } 
+				 body{ font-size: 30 px;
+				       font-family: Times New Roman;
+					   color: #FFFFFF
+					 }
+                 img{ padding:1024 px;
+                      margin:768 px;
+                      top: 0 px;
+					}
+                    a:visited{text-decoration:none;
+				              color:#FFFFFF;
+						     } 					
+	   </style>		
+               <script type="text/javascript" src= "js/jquery.js"> </script> 	   
+               <script language="javascript" type="text/javascript">
+					$(document).ready(function(){
+					 $("#menu li ul").hide();
+					 $("#menu li").hover(
+		
+					  function(){$(this).children("ul").show();},
+					  function(){$(this).children("ul").hide();}
+					 );
+					});
+	 
+			   </script>  
+  </head>
+
+    <body bgcolor="black">
+	  <ul id="menu"> 
+	      <li><a href="home.html">home</a></li>
+		  <li><a href="letras.html">letras</a></li>
+		  <li><a href="formulario.html">Saiba mais</a></li>
+		  <li>contatos</li>
+		  <li><a href="formulario.html">Inscreva-se</a></li>
+	
+		  <li>Visite tambem
+		       <ul>
+			      <li><a target="blank" href="http://www.vagalume,com.br/linkin-park">Vagalumes</a></li>
+				  <li><a target="blank" href="http://www.mundomax.com.br">MundoMax</a></li>
+			   </ul>	
+		  </li>	
+	   </ul> </br></br>
+	  contate-nos: </br> </br>
+	  
+	  e-mail:yandepaula@gmail.com</br>
+	  Telefone: (31) 93732191</br>
+	  Endereço: Rua ze den'dagua 240, País da estupidez,Idiotas;</br>
+	</body>
+</html>	

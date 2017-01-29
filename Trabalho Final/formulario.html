@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+
+<html lang="pt-br">
+
+  <head><title>formulario</title>
+   
+	  <meta charset="UTF-8"> 
+    <style>
+	    body{font-size: 20px;
+	    background-color:#000000;
+	   font-family: vernada;
+	   font-style: italic;
+	   color: #FFFFFF}
+	        ul#menu > li {
+				float:left;
+			}
+  
+			ul#menu > li > ul{
+				left:0px;
+				top:25px;
+			}
+		   ul{ list-style:none;
+		       padding:2;
+			   margin:2;
+			   color: #FFFFFF;
+			 }
+            li{text-decoration:underline;
+                width: 125px;
+                padding: 4px;
+				position: relative;
+               }
+            li:hover{ background-color: red;
+                      color:white;
+					}
+            /*submenu*/
+			li>ul{ position:absolute;
+				   left:130px;
+				   top:3 px;
+				   color:blue;
+				 } 
+				 
+                 
+                  body{ background-color: #000000;
+                        color: #FFFFFF;
+                      }  
+                     form{ color:#FFFFFF;}	         
+					 img{align: left bottom }
+ 					 a:visited{text-decoration:none;
+				               color:#FFFFFF;
+						      }  
+						      
+		</style>	
+		<script type="text/javascript" src= "js/jquery.js"> </script>  
+	
+               <script language="javascript" type="text/javascript">
+					$(document).ready(function(){
+					 $("#menu li ul").hide();
+					 $("#menu li").hover(
+		
+					  function(){$(this).children("ul").show();},
+					  function(){$(this).children("ul").hide();}
+					 );
+					});
+	 
+			   </script>	 
+	    
+  </head>   
+  <body >
+  	  <ul id="menu"> 
+	      <li><a href="home.html">home</li>
+		  <li><a href="letras.html">letras</a></li>
+		  <li><a href="pagina.html">Saiba mais</a></li>
+		  <li><a href="contatos.html">contatos</a></li>
+		  <li>Inscreva-se</a></li>
+	
+		  <li>Visite tambem
+		       <ul>
+			      <li><a target="blank" href="http://www.vagalume,com.br/linkin-park">Vagalumes</a></li>
+				  <li><a target="blank" href="http://www.mundomax.com.br">MundoMax</a></li>
+			   </ul>	
+		  </li>	
+	   </ul> </br></br>
+      <h1><b>Formulario</b></h1>
+      <table border >
+	  <tr> 
+	  <th>idade maxima <th>
+	  <th>idade minima </th>
+	  </tr>
+      <TR>
+	  <td>60 anos <td></br>
+	  <td>10 anos </td>
+	  </tr>
+	  </table>
+    <hr color="brown" align="left" width="20%" height="100%">
+	<font color="red">
+   
+	<form name="lp">
+	<br>
+	 
+	 login(e-mail)</br>
+	 <input type="text" name="login"></br>
+      Primeiro nome </br>
+      <input type="text" name="first name"></br>
+      Ultimo nome </br>
+      <input type="text"  name="last name"></br>
+      Apelido </br>
+	  <input type="text" name="nickname"></br>
+
+	 Senha</br>
+	  <input type="password" name="senha"  onfocus="alert('a senha precisa ter de 4 a 8 caracteres')"></br>
+	
+	  </br>
+	   diga sua idade </br>
+	   <input type="text" name="idade" onSubmit="idade(lp)" >
+	   
+	   </br>
+       
+		  data de nascimento:
+	  <select name="nascimento">
+	    <option value="opcao1">1</option>  	  
+        <option value="opcao2">2</option>	  
+        <option value="opcao3">3</option>
+        <option value="opcao4">4</option>    	  
+	    <option value="opcao5">5</option>  	  
+        <option value="opcao6">6</option>	  
+        <option value="opcao7">7</option>
+        <option value="opcao8">8</option>
+	    <option value="opcao9">9</option>  	  
+        <option value="opcao10">10</option>	  
+        <option value="opcao11">11</option>
+        <option value="opcao12">12</option>	
+		<option value="opcao13">13</option>  	  
+        <option value="opcao14">14</option>	  
+        <option value="opcao15">15</option>
+        <option value="opcao16">16</option>    	  
+	    <option value="opcao17">17</option>  	  
+        <option value="opcao18">18</option>	  
+        <option value="opcao19">19</option>
+        <option value="opcao20">20</option>
+	    <option value="opcao21">21</option>  	  
+        <option value="opcao22">22</option>	  
+        <option value="opcao23">23</option>
+        <option value="opcao24">24</option>
+        <option value="opcao25">25</option>	  
+        <option value="opcao26">26</option>
+        <option value="opcao27">27</option>
+	    <option value="opcao28">28</option>  	  
+        <option value="opcao29">29</option>	  
+        <option value="opcao30">30</option>
+        <option value="opcao31">31</option>
+       </select>   		
+	   <select name="mes">
+		<option value="opcao1">janeiro</option>  	  
+        <option value="opcao2">fevereiro</option>	  
+        <option value="opcao3">março</option>
+        <option value="opcao4">abril</option>    	  
+	    <option value="opcao5">maio</option>  	  
+        <option value="opcao6">junho</option>	  
+        <option value="opcao7">julho</option>
+        <option value="opcao8">agosto</option>
+	    <option value="opcao9">setembro</option>  	  
+        <option value="opcao10">outubro</option>	  
+        <option value="opcao11">novembro</option>
+        <option value="opcao12">dezembro</option>
+	   </select> 
+        </br>  	  
+	  Informe seu Sexo:
+      </br>
+      <input type="radio" name="sex" value="male">   Masculino </br>
+      <input type="radio" name="sex" value="female"> Feminino 
+      </br>
+	  Selecione seu pais
+	  <select name="popozao">
+        <option value="opcao1">Brasil</option>  	  
+        <option value="opcao2">Portugal</option>	  
+        <option value="opcao3">PALOPS</option>	  
+      </select></br>  
+	  <img align="right" src="Imagens/parti.jpg">
+	  Quem voce prefere da banda? </br>
+	        Chester Bennington: </br>
+	    <input type="CHECKBOX" value="ze" name="locomocao"></br>
+	        Mike Shinoda:</br>
+	    <input type="CHECKBOX" value="ze" name="locomocao"></br>
+            Phoenix:</br>
+		<input type="checkbox" value="ze" name="locomocao"></br>
+		    Joe Hahn:</br>
+		<input type="checkbox" value="ze" name="locomocao"></br>
+			Brad Delson:</br>
+		<input type="checkbox" value="ze" name="locomocao"></br>
+	    	Rob Bourdon:</br>
+		<input type="checkbox" value="ze" name="locomocao"></br>
+
+	  
+	     <input type="submit"  name="enviar" onClick="senha(lp)"></br>
+		
+	
+	</form>
+	   </font> 
+     
+  </body>
+</html>  

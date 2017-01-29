@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+
+<html lang="pt-br"  >
+  <head><meta charset="UTF-8">
+     <title>Pagina Inicial</title>
+	    <style>
+	        body{font-size: 20px;
+				background-color:#000000;
+				font-family: vernada;
+				font-style: italic;
+				color: #FFFFFF}
+	   ul#menu > li {
+				float:left;
+			}
+  
+			ul#menu > li > ul{
+				left:0px;
+				top:25px;
+			}
+		   ul{ list-style:none;
+		       padding:2;
+			   margin:2;
+			   color: #FFFFFF;
+			 }
+            li{ text-decoration:underline;
+                width: 125px;
+                padding: 4px;
+				position: relative;
+               }
+            li:hover{ background-color: red;
+                      color:white;
+					}
+            /*submenu*/
+			li>ul{ position:absolute;
+				   left:130px;
+				   top:3 px;
+				   color:blue;
+				 } 
+				 body{ font-size: 30 px;
+				       font-family: Times New Roman;
+					   color: #FFFFFF
+					 }
+                 
+                 
+                a:visited{text-decoration:none;
+				           color:#FFFFFF;
+						  }  
+						  
+		</style>
+						
+		    <script type="text/javascript" src= "js/jquery.js"> </script>
+               <script language="javascript" type="text/javascript">
+					$(document).ready(function(){
+					 $("#menu li ul").hide();
+					 $("#menu li").hover(
+		
+					  function(){$(this).children("ul").show();},
+					  function(){$(this).children("ul").hide();}
+					 );
+					});
+					      
+	               
+			   </script>
+					     <script>
+						  function vem(){
+							var nome=window.prompt("Diga seu nome");
+							alert("Olá "+nome+" seja bem vindo, crie sua conta em nossa pagina,obrigado");
+					         
+						  } 
+						</script>  
+		
+  </head>
+    <body onload="vem()">
+	 <img src="Imagens/Cabeçalho.jpg">
+	  <ul id="menu"> 
+	      <li>home</li>
+		  <li><a href="letras.html">letras</a></li>
+		  <li><a href="pagina.html">Saiba mais</a></li>
+		  <li><a href="contatos.html">contatos</a></li>
+		  <li><a href="formulario.html">Inscreva-se</a></li>
+	
+		  <li>Visite tambem
+		       <ul>
+			      <li><a target="blank" href="http://www.vagalume,com.br/linkin-park">Vagalumes</a></li>
+				  <li><a target="blank" href="http://www.mundomax.com.br">MundoMax</a></li>
+			   </ul>	
+		  </li>	
+	  </ul>
+	</br></br></br>
+	
+	      <p> Linkin Park é uma banda norte americana que não tem um estilo musical definido, tem musicas de um estilo outras tem outro, porém não sai de um conjunto
+	       de estilos, eles começaram em 1997 com o nome Hybrid Theory porém quando eles conseguiram um empresário aconselhou-os a mudar que poderia dar problema na hora
+		   de gravar então eles viraram a partir daí o tão conhecido Linkin Park que estão ainda no ponto alto da carreira surprendendo seus fans
+            que pensavam que eles ja estavam sem criatividade eles os surprenderam neste ano com um novo album The Hunting Party que vem alcançando records
+            de publico, e assim viraram oi centro das atenções de seus fãns mais uma vez </p>			
+	
+	
+	      <img src="Imagens/Linkin-Park-linkin-park-25142875-1146-697.jpg">
+		   
+	</body>
+
+</html>
+                       

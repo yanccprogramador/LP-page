@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+
+<html lang="pt-br">
+
+  <head>
+
+	<meta charset="UTF-8">
+	<title>Linkin park</title>
+	<style>  
+     body{font-size: 20px;
+	  background-color:#000000;
+	   font-family: vernada;
+	   font-style: italic;
+	   color: #FFFFFF}
+	   
+	      ul#menu > li {
+				float:left;
+			}
+  
+			ul#menu > li > ul{
+				left:0px;
+				top:25px;
+			}
+		   ul{ list-style:none;
+		       padding:2;
+			   margin:2;
+			   color: #FFFFFF;
+			 }
+            li{ text-decoration:underline;
+                width: 125px;
+                padding: 4px;
+				position: relative;
+               }
+            li:hover{ background-color: red;
+                      color:white;
+					}
+            /*submenu*/
+			li>ul{ position:absolute;
+				   left:130px;
+				   top:3 px;
+				   color:blue;
+				 } 
+				 a:visited{text-decoration:none;
+				           color:#FFFFFF;
+						  } 
+                 	
+               
+				 	 					
+		</style>
+		  <script language="javascript">
+   
+    function letra(){
+    if(foda.lp.value=="Numb" || foda.lp.value=="Castle of Glass" || foda.lp.value=="Iridescent" || foda.lp.value=="QWERTY" || foda.lp.value=="What I've Done" || foda.lp.value=="Shadow Of the Day" || foda.lp.value=="In the End" || foda.lp.value=="Leave Out All the Rest" || foda.lp.value=="Rebellion" || foda.lp.value=="Guilty All the Same"){	
+	
+	 if(foda.lp.value=="Numb"){
+	  window.open("Numb.html");
+	 }
+	 if(foda.lp.value=="Castle of Glass"){
+        window.open("Castle.html");
+     }
+	 if(foda.lp.value=="Guilty All the Same"){
+	   window.open("Guilty.html");
+     } 
+	 if(foda.lp.value=="Iridescent"){
+       window.open("Iridescent.html");	 
+     }
+	 if(foda.lp.value=="QWERTY"){
+	    window.open("QWERTY.html");
+	 } 
+      if(foda.lp.value=="What I've Done"){
+		window.open("What I've Done.html");
+	  }
+      if(foda.lp.value=="Rebellion"){
+		window.open("Rebellion.html");
+	  }
+      if(foda.lp.value=="Leave Out All the Rest"){
+        window.open("Leave out all the rest.html");
+      }
+	  if(foda.lp.value=="In the End"){
+	    window.open("In the end.html");
+	  }
+      if(foda.lp.value=="Shadow Of the Day"){
+        window.open("Shadow of the day.html");
+      }		
+	  }else{
+        alert("desculpe-nos, mas esta música não está em nosso site, pesquise nesse outro site");
+        window.open("http://www.vagalume,com.br/linkin-park");		
+	  }
+	}
+	</script> 
+  
+	      <script type="text/javascript" src= "js/jquery.js"> </script>  
+	    
+	           <script language="javascript" type="text/javascript">
+					$(document).ready(function(){
+					 $("#menu li ul").hide();
+					 $("#menu li").hover(
+		
+					  function(){$(this).children("ul").show();},
+					  function(){$(this).children("ul").hide();}
+					 );
+					});
+	
+			   </script>
+ </head>
+   <body>
+    <ul id="menu"> 
+	      <li><a href="home.html">home</a></li>
+		  <li>letras</li>
+		  <li><a href="pagina.html">Saiba mais</a></li>
+		  <li><a href="contatos.html">contatos</a></li>
+		  <li><a href="formulario.html">Inscreva-se</a></li>
+	
+		  <li>Visite tambem
+		       <ul>
+			      <li><a target="blank" href="http://www.vagalume,com.br/linkin-park">Vagalumes</a></li>
+				  <li><a target="blank" href="http://www.mundomax.com.br">MundoMax</a></li>
+			   </ul>	
+		  </li>	
+	   </ul> </br></br>
+	   <form name="foda">
+	   Escreva o nome de uma musica do Linkin Park: </br>
+	     <input type="text" name="lp">
+		 <input type="submit" value="verificar" onclick="letra()">
+
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </body> 
+</html>
